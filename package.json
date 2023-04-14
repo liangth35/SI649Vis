@@ -4,9 +4,8 @@
   "license": "MIT",
   "homepage": "https://liangth35.github.io/SI649Vis",
   "scripts": {
-    "start": "idyll index.idyll --theme tufte --layout centered --watch",
-    "build": "idyll index.idyll --theme tufte --layout centered",
-    "deploy": "npm run build && gh-pages -d ./build"
+    "deploy": "gh-pages -d docs",
+    "start": "idyll index.idyll --theme tufte --layout centered --watch"
   },
   "idyll": {
     "context": "./context.js",

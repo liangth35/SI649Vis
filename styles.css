@@ -12,10 +12,10 @@
   }
 }
 .idyll-scroll .idyll-text-container {
-  max-width: 70vw;
+  max-width: 55vw;
 }
 .idyll-scroll-text .idyll-step {
-  max-width: 70vw;
+  max-width: 55vw;
 }
 .d3-component-container {
   height: 20vw;
@@ -25,12 +25,18 @@
 #idyll-scroll-1 > .idyll-scroll-graphic {
   background: #33333f;
 }
+
+.idyll-text-container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
 @media only screen and (max-width: 1920px) {
   .idyll-scroll .idyll-text-container {
-    max-width: 70vw;
+    max-width: 55vw;
   }
   .idyll-scroll-text .idyll-step {
-    max-width: 70vw;
+    max-width: 55vw;
   }
   .d3-component-container {
     height: 31vw;
