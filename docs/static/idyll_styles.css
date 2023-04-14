@@ -678,10 +678,10 @@ pre {
   }
 }
 .idyll-scroll .idyll-text-container {
-  max-width: 50vw;
+  max-width: 70vw;
 }
 .idyll-scroll-text .idyll-step {
-  max-width: 45vw;
+  max-width: 70vw;
 }
 .d3-component-container {
   height: 20vw;
@@ -691,12 +691,12 @@ pre {
 #idyll-scroll-1 > .idyll-scroll-graphic {
   background: #33333f;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1920px) {
   .idyll-scroll .idyll-text-container {
-    max-width: 57vw;
+    max-width: 70vw;
   }
   .idyll-scroll-text .idyll-step {
-    max-width: 57vw;
+    max-width: 70vw;
   }
   .d3-component-container {
     height: 31vw;
