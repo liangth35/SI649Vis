@@ -2,6 +2,7 @@
   "name": "cse412-fp-template",
   "version": "1.0.0",
   "license": "MIT",
+  "homepage": "https://liangth35.github.io/SI649Vis",
   "scripts": {
     "start": "idyll index.idyll --theme tufte --layout centered --watch",
     "build": "idyll index.idyll --theme tufte --layout centered",
