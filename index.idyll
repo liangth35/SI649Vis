@@ -14,18 +14,26 @@
 [AltairEmbed link:"https://jkchi.github.io/chijk.github.io/chart_death.html" width:"100%" height:"800px"/]
 [/FullWidth]
 
+[TableauEmbed link:"https://public.tableau.com/views/649_sunburst/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link" width:"120%" height:"850px"/]
+
+[TableauEmbed link:"https://public.tableau.com/views/649_law_vs_death/Dashboard3?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link" width:"120%" height:"850px"/]
+
+[TableauEmbed link:"https://public.tableau.com/views/ArcPlot/Dashboard1?:display_count=n&:origin=viz_share_link" width:"120%" height:"800px"/]
+
 // [AltairEmbed link:"https://public.flourish.studio/visualisation/13261377/embed" width:"100%" height:"700px"/]
 
 [AltairEmbed link:"https://public.flourish.studio/visualisation/13278436/embed" width:"100%" height:"700px"/]
 
+
+
 [FullWidth]
-[TableauEmbed link:"https://public.tableau.com/views/ArcPlot/Dashboard1?:display_count=n&:origin=viz_share_link" width:"100%" height:"800px"/]
+[TableauEmbed link:"https://public.tableau.com/views/Book2_16815081952830/Dashboard1?:language=en-US&:origin=viz_share_link&:display_count=n" width:"100%" height:"800px"/]
 [/FullWidth]
 
 [Scroller]
-  [Graphic]
-    [AltairEmbed link:"https://public.flourish.studio/visualisation/13261377/embed" width:"100%" height:"700px"/]
-  [/Graphic]
+  // [Graphic]
+  //   [AltairEmbed link:"https://public.flourish.studio/visualisation/13261377/embed" width:"100%" height:"700px"/]
+  // [/Graphic]
 
   [Step]
     To create this scrolling segment of the document, we first specify a `Scroller` component, which can just be done with `[Scroller] ... [/Scroller]`. The text and visualizations seen here are specified within this component.
