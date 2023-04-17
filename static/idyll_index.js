@@ -20352,6 +20352,76 @@ var mapChildren = function mapChildren(children, transform) {
 
 module.exports = { filterChildren: filterChildren, mapChildren: mapChildren };
 
+},{"react":"react"}],"C:\\Users\\26405\\Desktop\\SI649Vis\\node_modules\\idyll-components\\dist\\cjs\\graphic.js":[function(require,module,exports){
+'use strict';
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _extends = Object.assign || function (target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i];for (var key in source) {
+      if (Object.prototype.hasOwnProperty.call(source, key)) {
+        target[key] = source[key];
+      }
+    }
+  }return target;
+};
+
+function _objectWithoutProperties(obj, keys) {
+  var target = {};for (var i in obj) {
+    if (keys.indexOf(i) >= 0) continue;if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;target[i] = obj[i];
+  }return target;
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (!self) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
+  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+}
+
+var React = require('react');
+
+var Graphic = function (_React$Component) {
+  _inherits(Graphic, _React$Component);
+
+  function Graphic() {
+    _classCallCheck(this, Graphic);
+
+    return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+  }
+
+  Graphic.prototype.render = function render() {
+    var _props = this.props,
+        idyll = _props.idyll,
+        updateProps = _props.updateProps,
+        hasError = _props.hasError,
+        props = _objectWithoutProperties(_props, ['idyll', 'updateProps', 'hasError']);
+
+    return React.createElement('div', _extends({ className: 'idyll-graphic' }, props));
+  };
+
+  return Graphic;
+}(React.Component);
+
+Graphic._idyll = {
+  name: 'Graphic',
+  tagType: 'open'
+};
+
+module.exports = Graphic;
+
 },{"react":"react"}],"C:\\Users\\26405\\Desktop\\SI649Vis\\node_modules\\idyll-components\\dist\\cjs\\header.js":[function(require,module,exports){
 'use strict';
 
@@ -52654,7 +52724,7 @@ module.exports = function whichTypedArray(value) {
 },{"available-typed-arrays":"C:\\Users\\26405\\Desktop\\SI649Vis\\node_modules\\available-typed-arrays\\index.js","call-bind/callBound":"C:\\Users\\26405\\Desktop\\SI649Vis\\node_modules\\call-bind\\callBound.js","for-each":"C:\\Users\\26405\\Desktop\\SI649Vis\\node_modules\\for-each\\index.js","gopd":"C:\\Users\\26405\\Desktop\\SI649Vis\\node_modules\\gopd\\index.js","has-tostringtag/shams":"C:\\Users\\26405\\Desktop\\SI649Vis\\node_modules\\has-tostringtag\\shams.js","is-typed-array":"C:\\Users\\26405\\Desktop\\SI649Vis\\node_modules\\is-typed-array\\index.js"}],"__IDYLL_AST__":[function(require,module,exports){
 "use strict";
 
-module.exports = { "id": 0, "type": "component", "name": "div", "children": [{ "id": 2, "type": "component", "name": "TextContainer", "children": [{ "id": 3, "type": "meta", "properties": { "title": { "type": "value", "value": "SI649 Final Project" } } }] }, { "id": 4, "type": "component", "name": "Header", "properties": { "title": { "type": "value", "value": "SI649 Final Project" }, "subtitle": { "type": "value", "value": "Data Visualization for Gun Violence in the United States" }, "author": { "type": "value", "value": "" }, "date": { "type": "value", "value": "Apr 14, 2023" }, "background": { "type": "value", "value": "#33333f" }, "color": { "type": "value", "value": "#ffffff" } }, "children": [] }, { "id": 5, "type": "component", "name": "div", "properties": { "className": { "type": "value", "value": "fullWidth" } }, "children": [{ "id": 6, "type": "component", "name": "AltairEmbed", "properties": { "link": { "type": "value", "value": "https://jkchi.github.io/chijk.github.io/chart_death.html" }, "width": { "type": "value", "value": "100%" }, "height": { "type": "value", "value": "800px" } }, "children": [] }] }, { "id": 7, "type": "component", "name": "TextContainer", "children": [{ "id": 8, "type": "component", "name": "TableauEmbed", "properties": { "link": { "type": "value", "value": "https://public.tableau.com/views/649_sunburst/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link" }, "width": { "type": "value", "value": "120%" }, "height": { "type": "value", "value": "850px" } }, "children": [] }, { "id": 9, "type": "component", "name": "TableauEmbed", "properties": { "link": { "type": "value", "value": "https://public.tableau.com/views/649_law_vs_death/Dashboard3?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link" }, "width": { "type": "value", "value": "120%" }, "height": { "type": "value", "value": "850px" } }, "children": [] }, { "id": 10, "type": "component", "name": "TableauEmbed", "properties": { "link": { "type": "value", "value": "https://public.tableau.com/views/ArcPlot/Dashboard1?:display_count=n&:origin=viz_share_link" }, "width": { "type": "value", "value": "120%" }, "height": { "type": "value", "value": "800px" } }, "children": [] }, { "id": 11, "type": "component", "name": "AltairEmbed", "properties": { "link": { "type": "value", "value": "https://public.flourish.studio/visualisation/13278436/embed" }, "width": { "type": "value", "value": "100%" }, "height": { "type": "value", "value": "700px" } }, "children": [] }] }, { "id": 12, "type": "component", "name": "div", "properties": { "className": { "type": "value", "value": "fullWidth" } }, "children": [{ "id": 13, "type": "component", "name": "TableauEmbed", "properties": { "link": { "type": "value", "value": "https://public.tableau.com/views/Book2_16815081952830/Dashboard1?:language=en-US&:origin=viz_share_link&:display_count=n" }, "width": { "type": "value", "value": "100%" }, "height": { "type": "value", "value": "800px" } }, "children": [] }] }, { "id": 14, "type": "component", "name": "Scroller", "children": [{ "id": 15, "type": "component", "name": "Step", "children": [{ "id": 16, "type": "component", "name": "p", "children": [{ "id": 17, "type": "textnode", "value": "\n    To create this scrolling segment of the document, we first specify a " }, { "id": 18, "type": "component", "name": "code", "children": [{ "id": 19, "type": "textnode", "value": "Scroller" }] }, { "id": 20, "type": "textnode", "value": " component, which can just be done with " }, { "id": 21, "type": "component", "name": "code", "children": [{ "id": 22, "type": "textnode", "value": "[Scroller] ... [/Scroller]" }] }, { "id": 23, "type": "textnode", "value": ". The text and visualizations seen here are specified within this component.\n  " }] }] }, { "id": 24, "type": "component", "name": "Step", "children": [{ "id": 25, "type": "component", "name": "p", "children": [{ "id": 26, "type": "textnode", "value": "\n    The background is that same Tableau map visualization from earlier, but displayed at a larger size.\n  " }] }] }, { "id": 27, "type": "component", "name": "Step", "children": [{ "id": 28, "type": "component", "name": "p", "children": [{ "id": 29, "type": "textnode", "value": "\n    To set the background, you can use a " }, { "id": 30, "type": "component", "name": "code", "children": [{ "id": 31, "type": "textnode", "value": "Graphic" }] }, { "id": 32, "type": "textnode", "value": " component to wrap the " }, { "id": 33, "type": "component", "name": "code", "children": [{ "id": 34, "type": "textnode", "value": "TableauEmbed" }] }, { "id": 35, "type": "textnode", "value": " component from earlier.\n  " }] }] }, { "id": 36, "type": "component", "name": "Step", "children": [{ "id": 37, "type": "component", "name": "p", "children": [{ "id": 38, "type": "textnode", "value": "\n    Take a look in the " }, { "id": 39, "type": "component", "name": "code", "children": [{ "id": 40, "type": "textnode", "value": "index.idyll" }] }, { "id": 41, "type": "textnode", "value": " file to see exactly how this works in the code, and keep scrolling for more examples.\n  " }] }] }] }] };
+module.exports = { "id": 0, "type": "component", "name": "div", "children": [{ "id": 2, "type": "component", "name": "TextContainer", "children": [{ "id": 3, "type": "meta", "properties": { "title": { "type": "value", "value": "SI649 Final Project" } } }] }, { "id": 4, "type": "component", "name": "Header", "properties": { "title": { "type": "value", "value": "SI649 Final Project" }, "subtitle": { "type": "value", "value": "Data Visualization for Gun Violence in the United States" }, "author": { "type": "value", "value": "" }, "date": { "type": "value", "value": "Apr 14, 2023" }, "background": { "type": "value", "value": "#33333f" }, "color": { "type": "value", "value": "#ffffff" } }, "children": [] }, { "id": 5, "type": "component", "name": "div", "properties": { "className": { "type": "value", "value": "fullWidth" } }, "children": [{ "id": 6, "type": "component", "name": "AltairEmbed", "properties": { "link": { "type": "value", "value": "https://jkchi.github.io/chijk.github.io/chart_death.html" }, "width": { "type": "value", "value": "100%" }, "height": { "type": "value", "value": "800px" } }, "children": [] }] }, { "id": 7, "type": "component", "name": "Scroller", "children": [{ "id": 8, "type": "component", "name": "Graphic", "children": [{ "id": 9, "type": "component", "name": "AltairEmbed", "properties": { "link": { "type": "value", "value": "https://jkchi.github.io/chijk.github.io/chart_death.html" }, "width": { "type": "value", "value": "100%" }, "height": { "type": "value", "value": "800px" } }, "children": [] }] }, { "id": 10, "type": "component", "name": "Step", "children": [{ "id": 11, "type": "component", "name": "p", "children": [{ "id": 12, "type": "textnode", "value": "\n  Gun violence is a severe issue in the US.\n  " }] }] }, { "id": 13, "type": "component", "name": "Step", "children": [{ "id": 14, "type": "component", "name": "p", "children": [{ "id": 15, "type": "textnode", "value": "\n  The number of gun laws in each state increases steadily each year.\n  " }] }] }, { "id": 16, "type": "component", "name": "Step", "children": [{ "id": 17, "type": "component", "name": "p", "children": [{ "id": 18, "type": "textnode", "value": "\n  More gun laws have a possible correlation with several outliers.\n  " }] }] }] }, { "id": 19, "type": "component", "name": "TextContainer", "children": [{ "id": 20, "type": "component", "name": "TableauEmbed", "properties": { "link": { "type": "value", "value": "https://public.tableau.com/views/649_sunburst/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link" }, "width": { "type": "value", "value": "120%" }, "height": { "type": "value", "value": "850px" } }, "children": [] }, { "id": 21, "type": "component", "name": "TableauEmbed", "properties": { "link": { "type": "value", "value": "https://public.tableau.com/views/649_law_vs_death/Dashboard3?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link" }, "width": { "type": "value", "value": "120%" }, "height": { "type": "value", "value": "850px" } }, "children": [] }, { "id": 22, "type": "component", "name": "TableauEmbed", "properties": { "link": { "type": "value", "value": "https://public.tableau.com/views/ArcPlot/Dashboard1?:display_count=n&:origin=viz_share_link" }, "width": { "type": "value", "value": "120%" }, "height": { "type": "value", "value": "800px" } }, "children": [] }, { "id": 23, "type": "component", "name": "AltairEmbed", "properties": { "link": { "type": "value", "value": "https://public.flourish.studio/visualisation/13278436/embed" }, "width": { "type": "value", "value": "100%" }, "height": { "type": "value", "value": "700px" } }, "children": [] }] }, { "id": 24, "type": "component", "name": "div", "properties": { "className": { "type": "value", "value": "fullWidth" } }, "children": [{ "id": 25, "type": "component", "name": "TableauEmbed", "properties": { "link": { "type": "value", "value": "https://public.tableau.com/views/Book2_16815081952830/Dashboard1?:language=en-US&:origin=viz_share_link&:display_count=n" }, "width": { "type": "value", "value": "100%" }, "height": { "type": "value", "value": "800px" } }, "children": [] }] }, { "id": 26, "type": "component", "name": "Scroller", "children": [{ "id": 27, "type": "component", "name": "Step", "children": [{ "id": 28, "type": "component", "name": "p", "children": [{ "id": 29, "type": "textnode", "value": "\n    To create this scrolling segment of the document, we first specify a " }, { "id": 30, "type": "component", "name": "code", "children": [{ "id": 31, "type": "textnode", "value": "Scroller" }] }, { "id": 32, "type": "textnode", "value": " component, which can just be done with " }, { "id": 33, "type": "component", "name": "code", "children": [{ "id": 34, "type": "textnode", "value": "[Scroller] ... [/Scroller]" }] }, { "id": 35, "type": "textnode", "value": ". The text and visualizations seen here are specified within this component.\n  " }] }] }, { "id": 36, "type": "component", "name": "Step", "children": [{ "id": 37, "type": "component", "name": "p", "children": [{ "id": 38, "type": "textnode", "value": "\n    The background is that same Tableau map visualization from earlier, but displayed at a larger size.\n  " }] }] }, { "id": 39, "type": "component", "name": "Step", "children": [{ "id": 40, "type": "component", "name": "p", "children": [{ "id": 41, "type": "textnode", "value": "\n    To set the background, you can use a " }, { "id": 42, "type": "component", "name": "code", "children": [{ "id": 43, "type": "textnode", "value": "Graphic" }] }, { "id": 44, "type": "textnode", "value": " component to wrap the " }, { "id": 45, "type": "component", "name": "code", "children": [{ "id": 46, "type": "textnode", "value": "TableauEmbed" }] }, { "id": 47, "type": "textnode", "value": " component from earlier.\n  " }] }] }, { "id": 48, "type": "component", "name": "Step", "children": [{ "id": 49, "type": "component", "name": "p", "children": [{ "id": 50, "type": "textnode", "value": "\n    Take a look in the " }, { "id": 51, "type": "component", "name": "code", "children": [{ "id": 52, "type": "textnode", "value": "index.idyll" }] }, { "id": 53, "type": "textnode", "value": " file to see exactly how this works in the code, and keep scrolling for more examples.\n  " }] }] }] }] };
 
 },{}],"__IDYLL_COMPONENTS__":[function(require,module,exports){
 'use strict';
@@ -52663,12 +52733,13 @@ module.exports = {
 	'text-container': require('C:/Users/26405/Desktop/SI649Vis/node_modules/idyll-components/dist/cjs/text-container.js'),
 	'header': require('C:/Users/26405/Desktop/SI649Vis/node_modules/idyll-components/dist/cjs/header.js'),
 	'altair-embed': require('C:/Users/26405/Desktop/SI649Vis/components/altair-embed.js'),
-	'tableau-embed': require('C:/Users/26405/Desktop/SI649Vis/components/tableau-embed.js'),
+	'graphic': require('C:/Users/26405/Desktop/SI649Vis/node_modules/idyll-components/dist/cjs/graphic.js'),
 	'step': require('C:/Users/26405/Desktop/SI649Vis/node_modules/idyll-components/dist/cjs/step.js'),
-	'scroller': require('C:/Users/26405/Desktop/SI649Vis/node_modules/idyll-components/dist/cjs/scroller.js')
+	'scroller': require('C:/Users/26405/Desktop/SI649Vis/node_modules/idyll-components/dist/cjs/scroller.js'),
+	'tableau-embed': require('C:/Users/26405/Desktop/SI649Vis/components/tableau-embed.js')
 };
 
-},{"C:/Users/26405/Desktop/SI649Vis/components/altair-embed.js":"C:\\Users\\26405\\Desktop\\SI649Vis\\components\\altair-embed.js","C:/Users/26405/Desktop/SI649Vis/components/tableau-embed.js":"C:\\Users\\26405\\Desktop\\SI649Vis\\components\\tableau-embed.js","C:/Users/26405/Desktop/SI649Vis/node_modules/idyll-components/dist/cjs/header.js":"C:\\Users\\26405\\Desktop\\SI649Vis\\node_modules\\idyll-components\\dist\\cjs\\header.js","C:/Users/26405/Desktop/SI649Vis/node_modules/idyll-components/dist/cjs/scroller.js":"C:\\Users\\26405\\Desktop\\SI649Vis\\node_modules\\idyll-components\\dist\\cjs\\scroller.js","C:/Users/26405/Desktop/SI649Vis/node_modules/idyll-components/dist/cjs/step.js":"C:\\Users\\26405\\Desktop\\SI649Vis\\node_modules\\idyll-components\\dist\\cjs\\step.js","C:/Users/26405/Desktop/SI649Vis/node_modules/idyll-components/dist/cjs/text-container.js":"C:\\Users\\26405\\Desktop\\SI649Vis\\node_modules\\idyll-components\\dist\\cjs\\text-container.js"}],"__IDYLL_CONTEXT__":[function(require,module,exports){
+},{"C:/Users/26405/Desktop/SI649Vis/components/altair-embed.js":"C:\\Users\\26405\\Desktop\\SI649Vis\\components\\altair-embed.js","C:/Users/26405/Desktop/SI649Vis/components/tableau-embed.js":"C:\\Users\\26405\\Desktop\\SI649Vis\\components\\tableau-embed.js","C:/Users/26405/Desktop/SI649Vis/node_modules/idyll-components/dist/cjs/graphic.js":"C:\\Users\\26405\\Desktop\\SI649Vis\\node_modules\\idyll-components\\dist\\cjs\\graphic.js","C:/Users/26405/Desktop/SI649Vis/node_modules/idyll-components/dist/cjs/header.js":"C:\\Users\\26405\\Desktop\\SI649Vis\\node_modules\\idyll-components\\dist\\cjs\\header.js","C:/Users/26405/Desktop/SI649Vis/node_modules/idyll-components/dist/cjs/scroller.js":"C:\\Users\\26405\\Desktop\\SI649Vis\\node_modules\\idyll-components\\dist\\cjs\\scroller.js","C:/Users/26405/Desktop/SI649Vis/node_modules/idyll-components/dist/cjs/step.js":"C:\\Users\\26405\\Desktop\\SI649Vis\\node_modules\\idyll-components\\dist\\cjs\\step.js","C:/Users/26405/Desktop/SI649Vis/node_modules/idyll-components/dist/cjs/text-container.js":"C:\\Users\\26405\\Desktop\\SI649Vis\\node_modules\\idyll-components\\dist\\cjs\\text-container.js"}],"__IDYLL_CONTEXT__":[function(require,module,exports){
 'use strict';
 
 var vl = require('vega-lite-api');
