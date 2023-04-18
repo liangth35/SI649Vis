@@ -15,6 +15,30 @@
 // The number of gun laws in each state
 // The change in gun laws in each state
 
+[Scroller]
+    [Graphic]
+      [ObservableEmbed link:"https://media.cnn.com/api/v1/images/stellar/prod/230215231121-01-msu-shooting-memorial-021523.jpg?c=16x9&q=h_900,w_1300" width:"1300px" height:"900px"/]
+    [/Graphic]
+  [Step]
+  Gun violence continues to be a deeply rooted social issue in the United States, 
+  with recent tragic incidents in Uvalde city and MSU resulting in the loss of young 
+  lives and affecting local communities. In response, legislation such as 
+  H.R.1808 Assault Weapons Ban and H.R.7910 Protecting Our Kid Act has been introduced. 
+  [/Step]
+  [Step]
+  However, the debate surrounding these bills has raised concerns about the competence and 
+  motivations of politicians on both sides of the issue. Based on the data in the past several years, 
+  there is a constant increase in the number of firearm related death.  
+  [/Step]
+  [Step]
+  These incidents suggest that the effectiveness of current gun control bills and laws may 
+  be compromised by inadequate understanding and potential influence from parties with different interest. Hence, 
+  we researched various aspect of gun laws and and examined their effectiveness.
+  [/Step]
+[/Scroller]
+
+
+
 [FullWidth]
 [AltairEmbed link:"https://jkchi.github.io/chijk.github.io/chart_death.html" width:"100%" height:"800px"/]
 [/FullWidth]

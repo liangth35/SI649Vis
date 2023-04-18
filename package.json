@@ -23,6 +23,7 @@
     "idyll": "^5.7.6",
     "idyll-d3-component": "^2.0.0",
     "idyll-vega-lite": "^2.1.0",
+    "react": "^16.14.0",
     "vega-lite-api": "^5.0.0"
   },
   "devDependencies": {
