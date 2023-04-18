@@ -10,88 +10,106 @@
   color:"#ffffff"
    /]
 
+// Description
+// Map of the gun violence situation
+// The number of gun laws in each state
+// The change in gun laws in each state
+
 [FullWidth]
 [AltairEmbed link:"https://jkchi.github.io/chijk.github.io/chart_death.html" width:"100%" height:"800px"/]
 [/FullWidth]
 
+[Scroller]
+    [Graphic]
+      [AltairEmbed link:"https://jkchi.github.io/chijk.github.io/chart_death.html" width:"100%" height:"800px"/]
+    [/Graphic]
+  [Step]
+  Gun violence is a severe issue in the US.
+  [/Step]
+  [Step]
+  The number of gun laws in each state increases steadily each year.
+  [/Step]
+  [Step]
+  More gun laws have a possible correlation with several outliers.
+  [/Step]
+[/Scroller]
+
+This is a sunburst plot showing the number of gun laws in each category.
 [TableauEmbed link:"https://public.tableau.com/views/649_sunburst/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link" width:"120%" height:"850px"/]
+
 
 [TableauEmbed link:"https://public.tableau.com/views/649_law_vs_death/Dashboard3?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link" width:"120%" height:"850px"/]
 
-[TableauEmbed link:"https://public.tableau.com/views/ArcPlot/Dashboard1?:display_count=n&:origin=viz_share_link" width:"120%" height:"800px"/]
+[Scroller]
+    [Graphic]
+      [TableauEmbed link:"https://public.tableau.com/views/649_law_vs_death/Dashboard3?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link" width:"120%" height:"850px"/]
+    [/Graphic]
+  [Step]
+  This is a scatter plot with linear regression lines that shows the relationship between the number of gun laws and the number of gun violence deaths each year.
+  [/Step]
+  [Step]
+  We can see that dealer&buyer regulation has the strongest negative correlation with the number of gun violence deaths.
+  [/Step]
+[/Scroller]
 
-// [AltairEmbed link:"https://public.flourish.studio/visualisation/13261377/embed" width:"100%" height:"700px"/]
+[TableauEmbed link:"https://public.tableau.com/views/ArcPlot/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link" width:"120%" height:"800px"/]
+[Scroller]
+  [Graphic]
+    [TableauEmbed link:"https://public.tableau.com/views/ArcPlot/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link" width:"120%" height:"850px"/]
+  [/Graphic]
+  [Step]
+  The increase in number of gun laws doesn't necessarily mean a better suppression on gun violence.
+  [/Step]
+  [Step]
+  With an arc plot, we can interpret the findings more intuitively. 
+  Each arc line represents a target instance: a state with a year. 
+  The green and blue part show the gun violence death rates and injury rates without the extra gun laws. 
+  [/Step]
+  [Step]
+  // And the audience can also see where do the rates go when the new gun laws are in effect. 
+  From the plots, it can be observed that there are many instances that have more violence when there are new laws.
+  [/Step]
+[/Scroller]
+
 
 [AltairEmbed link:"https://public.flourish.studio/visualisation/13278436/embed" width:"100%" height:"700px"/]
+[Scroller]
+    [Graphic]
+      [AltairEmbed link:"https://public.flourish.studio/visualisation/13278436/embed" width:"100%" height:"700px"/]
+    [/Graphic]
+  [Step]
+  The bubble chart with a trend line provides a visual representation of the relationship between state gun law strength, 
+  death rate ranking, and gun law strength grade from A to F, according to the Giffords Gun Law Center, 
+  offering insights into the evolution of gun laws across different states over time.
+  [/Step]
+  [Step]
+  A bubble that is larger and closer to the upper left corner indicates that the state has a lower death rate ranking and higher law strength ranking. 
+  [/Step]
+  [Step]
+  From this bubble chart, viewers can quickly and easily identify states that are doing well, as well as those that may need more attention or intervention to improve.
+  [/Step]
+  [Step]
+  Another insight from the chart is that no states had A-level gun laws before 2015, but California and New Jersey achieved A-level in 2016 and 2018, respectively. 
+  Additionally, the chart shows that Wyoming had the loosest gun laws in 2014, Alaska had the loosest from 2015-2018 and 2020, and Mississippi had the loosest gun laws in 2019 and 2021-2022. 
+  [/Step]
+[/Scroller]
 
 
 
 [FullWidth]
 [TableauEmbed link:"https://public.tableau.com/views/Book2_16815081952830/Dashboard1?:language=en-US&:origin=viz_share_link&:display_count=n" width:"100%" height:"800px"/]
 [/FullWidth]
-
 [Scroller]
-  // [Graphic]
-  //   [AltairEmbed link:"https://public.flourish.studio/visualisation/13261377/embed" width:"100%" height:"700px"/]
-  // [/Graphic]
-
+    [Graphic]
+      [TableauEmbed link:"https://public.tableau.com/views/Book2_16815081952830/Dashboard1?:language=en-US&:origin=viz_share_link&:display_count=n" width:"100%" height:"800px"/]
+    [/Graphic]
   [Step]
-    To create this scrolling segment of the document, we first specify a `Scroller` component, which can just be done with `[Scroller] ... [/Scroller]`. The text and visualizations seen here are specified within this component.
+  Suicide and Homicide are the two major component of gun related death.
   [/Step]
-
   [Step]
-    The background is that same Tableau map visualization from earlier, but displayed at a larger size.
+  Comparing the other gun laws, the laws dedicated against suicide is limited. 
   [/Step]
-
-  [Step]
-    To set the background, you can use a `Graphic` component to wrap the `TableauEmbed` component from earlier.
-  [/Step]
-
-
-  [Step]
-    Take a look in the `index.idyll` file to see exactly how this works in the code, and keep scrolling for more examples.
-  [/Step]
-
 [/Scroller]
 
-// Idyll allows you to mix and match components throughout the document to create dynamic visualizations and compelling narrative layouts. Some other layout options include [FullWidth](https://idyll-lang.org/docs/component/full-width), [Inline](https://idyll-lang.org/docs/component/inline), and [Stepper](https://idyll-lang.org/docs/component/stepper), among others. Details are included on [Idyll's documentation page for built-in components](https://idyll-lang.org/docs/components).
 
-// This page also describes a variety of the other built-in components for controlling the dynamic behavior of the document, such as [dynamic variables](https://idyll-lang.org/docs/component/dynamic) and input widgets like ([buttons](https://idyll-lang.org/docs/component/button), [range sliders](https://idyll-lang.org/docs/component/range), and [dropdowns](https://idyll-lang.org/docs/component/select)).
 
-// Let's take a look at some dynamic visualization updates with another scrollytelling example. In this case, we will use a fixed visualization alongside the text and update the visualization as we go. Keep scrolling to see the example...
-
-// [var name:"myLocation" value:0 /]
-
-// [Scroller className:"hasBackground" currentStep:myLocation]
-
-//   [Graphic className:"d3-component-container"]
-//     [CustomD3Component className:"d3-component" state:`myLocation+1` /]
-//   [/Graphic]
-
-//   [Step]
-//     This `Scroller` uses some custom CSS to set the background color to "#33333f" [Inline][div style:`{background: "#33333f", width: 12, height: 12}` /][/Inline].
-//   [/Step]
-
-//   [Step]
-//     It also uses custom CSS to style the `Graphic` (which is a custom D3 component) so that it appears as a fixed visualization next to the scrolling text.
-//   [/Step]
-
-//   [Step]
-//     What's cool about this `CustomD3Component` is that it updates as we scroll. It does this by leveraging the `update` function to animate the point as it moves to a new position.
-//   [/Step]
-
-//   [Step]
-//     To keep track of where we are in the `Scroller`, we first defined a dynamic Idyll variable named `myLocation` using the following code: `[var name:"myLocation" value:0 /]`
-//   [/Step]
-
-//   [Step]
-//     Each time we scroll to a new `Step`, the `Graphic` updates it state based on this dynamic variable, which can be used to parameterize the visualization.
-//   [/Step]
-
-//   [Step]
-//     Right now, the value of `myLocation` is [Display value:myLocation /]. Cool huh?
-
-//     [span style:`{color:'#aaa', fontStyle:'italic'}`]If you scroll back and forth between this `Step` and the previous one, notice how the value that is displayed changes based on when the new `Step` is triggered.[/span]
-//   [/Step]
-
-// [/Scroller]
