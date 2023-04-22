@@ -27,8 +27,57 @@
 } */
 
 .idyll-text-container {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
+}
+
+.myHeader {
+  font-size: 48px;
+  font-weight: 400;
+  text-align: center;
+  margin: 20px;
+  line-height: 1.5;
+}
+.mySubHeader {
+  font-size: 28px;
+  font-weight: 400;
+  text-align: center;
+  margin: 20px;
+  line-height: 1.5;
+}
+
+.myTitle {
+  font-size: 48px;
+  font-weight: 400;
+  text-align: center;
+  margin: 88px 0;
+  line-height: 1.5;
+}
+
+@keyframes fade {
+  0%   { opacity: 1.0; }
+  50%  { opacity: 0; }
+  100% { opacity: 1.0; }
+}
+.mySubTitle {
+  font-size: 28px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  line-height: 1.5;
+  font-style: italic;
+  animation-name: fade;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.myEnd {
+  font-size: 48px;
+  font-weight: 400;
+  text-align: center;
+  margin: 280px 0;
+  line-height: 1.5;
 }
 
 @media only screen and (max-width: 1920px) {

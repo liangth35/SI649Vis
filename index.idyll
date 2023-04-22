@@ -1,19 +1,12 @@
 [meta title:"SI649 Final Project" /]
 
-[Header
-  fullWidth:true
-  title:"SI649 Final Project"
-  subtitle:"Data Visualization for Gun Violence in the United States"
-  author:""
-  date:"Apr 14, 2023"
-  background:"#33333f"
-  color:"#ffffff"
-   /]
+[FullWidth]
+[p className:'myHeader']How Gun Laws Impacted Gun-Related Deaths in the U.S.?[/p]
+[p className:'mySubHeader']SI 649 Final Project - Group 17[/p]
+[p className:'mySubHeader']By: Jinkui Chi, Ken Shao, Shiyu Wu, Tianhao Liang, Yuru Gong[/p]
 
-// Description
-// Map of the gun violence situation
-// The number of gun laws in each state
-// The change in gun laws in each state
+[p className:'mySubTitle']Please scroll down to explore![/p]
+[/FullWidth]
 
 [Scroller]
     [Graphic]
@@ -37,13 +30,16 @@
   [/Step]
 [/Scroller]
 
-
+[p className:'myTitle']What do the data say about gun deaths in the U.S.?[/p]
 
 [FullWidth]
 [AltairEmbed link:"https://jkchi.github.io/chijk.github.io/chart_death.html" width:"100%" height:"800px"/]
 [/FullWidth]
 
 [Scroller]
+  [Graphic]
+    [ObservableEmbed link:"./static/images/Gun-Constitution.webp" width:"1300px" height:"900px"/]
+  [/Graphic]
   [Step]
   1. Gun violence is a severe issue in the US.[br/]
   2. The number of gun laws in each state increases steadily each year.[br/]
@@ -51,29 +47,32 @@
   [/Step]
 [/Scroller]
 
-This is a sunburst plot showing the number of gun laws in each category.
-[TableauEmbed link:"https://public.tableau.com/views/649_sunburst/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link" width:"120%" height:"850px"/]
+[p className:'myTitle']What kind of gun law is related to gun deaths?[/p]
 
+[TableauEmbed link:"https://public.tableau.com/views/649_sunburst/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link" width:"100%" height:"830px"/]
 
-[TableauEmbed link:"https://public.tableau.com/views/649_law_vs_death/Dashboard3?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link" width:"120%" height:"850px"/]
+[TableauEmbed link:"https://public.tableau.com/views/649_law_vs_death/Dashboard3?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link" width:"100%" height:"830px"/]
 
 [Scroller]
-    // [Graphic]
-    //   [TableauEmbed link:"https://public.tableau.com/views/649_law_vs_death/Dashboard3?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link" width:"120%" height:"850px"/]
-    // [/Graphic]
+    [Graphic]
+      [ObservableEmbed link:"./static/images/gun law shutterstock_0.jpg" width:"1300px" height:"900px"/]
+    [/Graphic]
   [Step]
-  This is a scatter plot with linear regression lines that shows the relationship between the number of gun laws and the number of gun violence deaths each year.
+  The graph above a scatter plot with linear regression lines that shows the relationship between the number of gun laws and the number of gun violence deaths each year.
   [/Step]
   [Step]
   We can see that dealer&buyer regulation has the strongest negative correlation with the number of gun violence deaths.
   [/Step]
 [/Scroller]
 
-[TableauEmbed link:"https://public.tableau.com/views/ArcPlot/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link" width:"120%" height:"800px"/]
+[p className:'myTitle']Are the more laws the better?[/p]
+
+[TableauEmbed link:"https://public.tableau.com/views/ArcPlot/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link" width:"100%" height:"830px"/]
 [Scroller]
-  // [Graphic]
-  //   [TableauEmbed link:"https://public.tableau.com/views/ArcPlot/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link" width:"120%" height:"850px"/]
-  // [/Graphic]
+  [Graphic]
+    [ObservableEmbed link:"./static/images/210901191808-05-texas-gun-law.jpg" width:"1300px" height:"800"/]
+    
+  [/Graphic]
   [Step]
   The increase in number of gun laws doesn't necessarily mean a better suppression on gun violence.
   [/Step]
@@ -88,12 +87,13 @@ This is a sunburst plot showing the number of gun laws in each category.
   [/Step]
 [/Scroller]
 
+[p className:'myTitle']How has gun laws' strength in the U.S. changed over time?[/p]
 
 [AltairEmbed link:"https://public.flourish.studio/visualisation/13278436/embed" width:"100%" height:"700px"/]
 [Scroller]
-    // [Graphic]
-    //   [AltairEmbed link:"https://public.flourish.studio/visualisation/13278436/embed" width:"100%" height:"700px"/]
-    // [/Graphic]
+    [Graphic]
+      [ObservableEmbed link:"./static/images/1655330854577.webp" width:"1300px" height:"800"/]
+    [/Graphic]
   [Step]
   The bubble chart with a trend line provides a visual representation of the relationship between state gun law strength, 
   death rate ranking, and gun law strength grade from A to F, according to the Giffords Gun Law Center, 
@@ -112,14 +112,14 @@ This is a sunburst plot showing the number of gun laws in each category.
 [/Scroller]
 
 
-
+[p className:'myTitle']Next topic to explore: imbalance of laws[/p]
 [FullWidth]
 [TableauEmbed link:"https://public.tableau.com/views/Book2_16815081952830/Dashboard1?:language=en-US&:origin=viz_share_link&:display_count=n" width:"100%" height:"800px"/]
 [/FullWidth]
 [Scroller]
-    // [Graphic]
-    //   [TableauEmbed link:"https://public.tableau.com/views/Book2_16815081952830/Dashboard1?:language=en-US&:origin=viz_share_link&:display_count=n" width:"100%" height:"800px"/]
-    // [/Graphic]
+    [Graphic]
+      [ObservableEmbed link:"./static/images/00dc-redflag-burst-01-ftqc-superJumbo-v2.webp" width:"1300px" height:"900px"/]
+    [/Graphic]
   [Step]
   Suicide and Homicide are the two major component of gun related death.
   [/Step]
@@ -130,3 +130,4 @@ This is a sunburst plot showing the number of gun laws in each category.
 
 
 
+[p className:'myEnd']Thank You for Watching![/p]
